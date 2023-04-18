@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Play View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PlayViewController" customModule="WornAnswer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="imgbin-national-geographic-television-show-television-channel-game-geographic-93QEGq0fqS2dfLG6rFyfyUqPp-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="dKi-rB-onl">
+                                <rect key="frame" x="21" y="32" width="361" height="342"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JiD-hC-aPF">
+                                <rect key="frame" x="50" y="489" width="303" height="35"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Play"/>
+                                <connections>
+                                    <action selector="playButtonActoion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Va-K7-RJ6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dKi-rB-onl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-27" id="2Z4-Bo-SbI"/>
+                            <constraint firstItem="dKi-rB-onl" firstAttribute="centerX" secondItem="JiD-hC-aPF" secondAttribute="centerX" id="AGi-M8-d9y"/>
+                            <constraint firstItem="dKi-rB-onl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="21" id="E7f-Po-5iP"/>
+                            <constraint firstItem="JiD-hC-aPF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="K5W-QA-mhG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JiD-hC-aPF" secondAttribute="bottom" constant="294" id="oYr-Cu-fUz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dKi-rB-onl" secondAttribute="trailing" constant="11" id="tSo-h0-e5T"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.885496183206101" y="-34.507042253521128"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="D0R-nb-Th0">
+            <objects>
+                <viewController id="nIr-tX-dSg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k4A-Cg-5rC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shK-BM-ilx">
+                                <rect key="frame" x="37" y="328" width="317" height="37"/>
+                                <color key="backgroundColor" red="0.66675299406051636" green="0.5475513937580252" blue="0.54484458027129601" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.right" catalog="system" title="Esey"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhW-AU-GgP">
+                                <rect key="frame" x="37" y="407" width="317" height="38"/>
+                                <color key="backgroundColor" red="0.66666668650000005" green="0.58632678298150676" blue="0.61991273540168734" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.right" catalog="system" title="Medium"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsE-LB-cgd">
+                                <rect key="frame" x="37" y="484" width="317" height="36"/>
+                                <color key="backgroundColor" red="0.66666668650000005" green="0.51975122436687171" blue="0.47483268734342077" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="xF1-9Y-tOk"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.right" catalog="system" title="Hard"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BDP-0Q-C00"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="shK-BM-ilx" firstAttribute="leading" secondItem="rhW-AU-GgP" secondAttribute="leading" id="3vu-wK-NUp"/>
+                            <constraint firstItem="rhW-AU-GgP" firstAttribute="centerY" secondItem="k4A-Cg-5rC" secondAttribute="centerY" id="7Kh-J8-rmr"/>
+                            <constraint firstItem="rhW-AU-GgP" firstAttribute="leading" secondItem="hsE-LB-cgd" secondAttribute="leading" id="Dhm-lE-LsZ"/>
+                            <constraint firstItem="shK-BM-ilx" firstAttribute="leading" secondItem="BDP-0Q-C00" secondAttribute="leading" constant="37" id="FV6-Wf-dOf"/>
+                            <constraint firstItem="rhW-AU-GgP" firstAttribute="top" secondItem="shK-BM-ilx" secondAttribute="bottom" constant="42" id="OhL-sC-ERw"/>
+                            <constraint firstItem="shK-BM-ilx" firstAttribute="trailing" secondItem="rhW-AU-GgP" secondAttribute="trailing" id="Sca-aU-niy"/>
+                            <constraint firstItem="rhW-AU-GgP" firstAttribute="trailing" secondItem="hsE-LB-cgd" secondAttribute="trailing" id="fUW-lx-Xh2"/>
+                            <constraint firstItem="BDP-0Q-C00" firstAttribute="trailing" secondItem="shK-BM-ilx" secondAttribute="trailing" constant="39" id="nOw-vB-wrU"/>
+                            <constraint firstItem="BDP-0Q-C00" firstAttribute="bottom" secondItem="hsE-LB-cgd" secondAttribute="bottom" constant="298" id="tz4-Tw-fnY"/>
+                            <constraint firstItem="hsE-LB-cgd" firstAttribute="top" secondItem="rhW-AU-GgP" secondAttribute="bottom" constant="39" id="wbc-lr-deX"/>
+                            <constraint firstItem="shK-BM-ilx" firstAttribute="top" secondItem="BDP-0Q-C00" secondAttribute="top" constant="269" id="zY6-Zr-efU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="puI-vD-2No"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="36b-2H-V8R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="800.76335877862596" y="-35.211267605633807"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.right" catalog="system" width="128" height="104"/>
+        <image name="imgbin-national-geographic-television-show-television-channel-game-geographic-93QEGq0fqS2dfLG6rFyfyUqPp-removebg-preview" width="728" height="342"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
